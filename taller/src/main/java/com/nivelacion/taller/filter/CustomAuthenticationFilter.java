@@ -28,11 +28,11 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.MediaType;
 
 @Slf4j
-public class CustomAthenticationFilter extends UsernamePasswordAuthenticationFilter {
+public class CustomAuthenticationFilter extends UsernamePasswordAuthenticationFilter {
 
         private final AuthenticationManager authenticationManager;
 
-        public CustomAthenticationFilter(AuthenticationManager authenticationManager) {
+        public CustomAuthenticationFilter(AuthenticationManager authenticationManager) {
                 this.authenticationManager = authenticationManager;
         }
 

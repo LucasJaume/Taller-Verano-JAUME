@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión - Competencia de Fútbol</title>
+    <link rel="stylesheet" href="login.component.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <h2>Iniciar sesión</h2>
+            <form action="#" class="login-form" [formGroup]="form" (ngSubmit)="ingresar()">
+                <mat-form-field class="form-group">
+                    <input formControlName="usuario" type="text" id="username" name="username" placeholder="Nombre de usuario" required>
+                </mat-form-field>
+                <mat-form-field class="form-group">
+                    <input formControlName="contrasenia" type="password" id="password" name="password" placeholder="Contraseña" required>
+                </mat-form-field>
+                <button type="submit">Iniciar sesión</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+

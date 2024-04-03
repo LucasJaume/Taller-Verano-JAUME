@@ -20,7 +20,7 @@ public class TallerApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(TallerApplication.class, args);
 	}
-
+	@Bean
 	PasswordEncoder passwordEnconder() {
 		return new BCryptPasswordEncoder();
 	}
