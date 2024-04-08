@@ -33,12 +33,13 @@ h2 {
 
 input[type="text"],
 input[type="password"] {
-    padding: 15px;
+    padding: 12px; /* Ajuste del relleno */
     border-radius: 5px;
     background-color: #f2f2f2;
     font-size: 16px;
-    border: 1px black solid;
-    width: 300px;
+    border: 1px solid #95a5a6;
+    width: calc(100% - 26px);
+    
 }
 
 button {

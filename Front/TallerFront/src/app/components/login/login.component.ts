@@ -36,8 +36,9 @@ export class LoginComponent implements OnInit {
   .set('password', user.password)
 
   this.rest.login(params).subscribe((data)=>{
-    localStorage.setItem('token', data.acces_token);
-    console.log('Ingreso incorrecto');
+    console.log("token:", data);
+    localStorage.setItem('token', data.access_token);
+    console.log('Ingreso correcto');
     this.router.navigate(['/competencia'])
   })
   }

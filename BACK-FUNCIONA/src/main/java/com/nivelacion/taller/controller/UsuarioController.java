@@ -48,7 +48,7 @@ import static org.springframework.http.HttpHeaders.AUTHORIZATION;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping(path = "/api/v1")
-@CrossOrigin
+@CrossOrigin("*")
 public class UsuarioController {
 
     private final UsuarioService usuarioService;

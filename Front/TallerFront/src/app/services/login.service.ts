@@ -11,7 +11,7 @@ export class LoginService {
 
   login(params:HttpParams):Observable<any>{
     return this.http.post("http://localhost:8080/api/v1/login", params.toString(),{
-      headers:{'Content.Type' : ' application/x-www-form-urlencoded'}
+      headers:{'Content-Type' : ' application/x-www-form-urlencoded'}
     });
   }
 }
